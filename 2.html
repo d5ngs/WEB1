@@ -3,9 +3,20 @@
 <head>
   <title>WEB(css)_With_MY</title>
   <meta charset="utf-8">
+  <style>
+    a {
+      color:black;
+    }
+    h2 {
+      font-size :50px;
+    }
+    h4 {
+      color:orange;
+    }
+  </style>
 </head>
 <body>
-  <h2><a href = "index.html">WEB</a></h2>
+  <h2><a href = "index.html" style="color:black;text-decoration:none">WEB</a></h2>
   <ol>
     <li><a href = "1.html">HTML / 누룽지</a></li>
     <li><a href = "2.html">CSS / 낑깡</a></li>
@@ -13,13 +24,60 @@
   </ol>
   <p style = "margin-top:45px;"><strong>==========================================</strong></p>
   <h1>낑깡</h1>
-  <p style = "margin-top:45px;">민영이는 <b>낑깡</b>을 좋아한다.
-    <br>'낑깡'이 무엇인지 난 몰랐다면 민영이를 모르고 지냈을 수도?
-    <br><strong><u>낑깡</u></strong>을 요즘엔 안먹는것 같다.
+  <p style = "margin-top:45px;">민영이는 <b><font color="orange">낑깡</font></b>을 좋아한다.
+    <br>'<font color="orange">낑깡</font>'이 무엇인지 난 몰랐다면 민영이를 모르고 지냈을 수도?
+    <br>그나저나 <strong><u><font color="orange">낑깡</font></u></strong>을 요즘엔 안먹는것 같다.
     <br>사줘야겠당..
-    <br>이 친구가 궁금하다면 <a href="https://www.instagram.com/ming0_/" target="_blank" title = "민영스타그램">클릭해보시지.</a></p>
+    <br>이 친구가 궁금하다면 <a href="https://www.instagram.com/ming0_/" target="_blank" title = "민영스타그램" style="color:blue">클릭해보시지.</a></p>
     <img src="mini_orange.jpg" width="450">
 
+    <p style="margin-top:45px;">
+      <h3>아무말 대잔치</h3>
+      <br><h4>낑깡은 왜 껍질채로 먹나?</h4>
+      <br><h4>오렌지 밀감 낑깡은 한 가족인가?</h4>
+      <br><h4>민영이가 요즘 참 피곤해 보이는군</h4>
+      <br><h4>요즘 두통이 나는데 도통 이유를 모루겠군</h4>
+      <br><h4>껍질 다 까여진 밀감이 쌓여있다면 40개는 먹을 수 있을것 같애</h4>
+
+    </p>
+
     <p style = "margin-top:45px;"><strong>==========================================</strong></p>
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Ok0bBJPtgJI" frameborder = "0" allowfullscreen></iframe></p>
+
+    <p style = "margin-top:45px;"><strong>* font</strong>
+      <br>- 색을 입힐 수 있음
+      <br>- color = "red" 라는 식으로 색 가능
+      <br>- HTML에 디자인 관련 tag를 추가하는 방법은 CSS에 비해 쉽지만 여러가지 한계가 있음
+      <br>- 예를 들어서, font 태그를 추가하거나 수정할 때 중복적인 코드, 작업으로 유지보수에 어려움
+    </p>
+
+    <p><strong>* head 태그 안의 style</strong>
+      <br>- 사용 중인 태그에 속해있는 문구를 한방에 컬러를 변경할 수 있음
+      <br>- font태그에 비해서 유지보수에 용이, 효율적임
+      <br>- 같은 태그를 사용하더라도 디자인을 다르게 하고 싶다면 어떻게 해야 할려나..
+      <br>- 이 디자인을 누구에게 줄것인지 선택한다라는 점에서 <strong>선택자(Selector)</strong>라고 불림
+      <br>- 선택자 내부(중괄호로 묶인 곳)는 <strong>선언, 효과(Declaration)</strong>라고 불림
+    </p>
+
+    <p><strong>* 속성의 style</strong>
+      <br>- 문구에 효과를 줄 수 있음
+      <br>- head 태그 안의 style과는 다르게 특정 누구의 디자인이라고 할 수 있음
+    </p>
+
+    <p><strong>* 속성 및 효과</strong>
+      <br>- color : 컬러를 넣음
+      <br>- text-decoration : 텍스트의 밑줄
+      <br>- font-size : 텍스트의 사이즈
+      <br>- text-align : 텍스트의 정렬
+      <br>- 그 밖에 에디터의 자동완성, 검색으로 알아볼 것!
+    </p>
+
+    <p><strong>* 선택자</strong>
+      <br>- 링크에 대해서 현재 머물고 있는 링크와 방문했었던 링크를 색으로 비교하고자 한다.
+      <br>- 기존에 속성의 style로 color를 주는 작업을 한다면 중복이라는 문제가 발생
+      <br>- 따라서, class라는 속성을 이용해서 선택자들을 태그별로 나누는게 아니라 하나의 그룹으로 나눌 수 있게 되었음
+    </p>
+
+
   </body>
   </html>
