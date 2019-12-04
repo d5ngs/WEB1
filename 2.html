@@ -4,23 +4,33 @@
   <title>WEB(css)_With_MY</title>
   <meta charset="utf-8">
   <style>
-    a {
-      color:black;
-    }
-    h2 {
-      font-size :50px;
-    }
-    h4 {
-      color:orange;
-    }
+  a {
+    color: black;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  h4 {
+    color: orange;
+  }
+  .saw {
+    color: gray;
+  }
+  .active {
+    color: red;
+  }
+  #dong {
+    color: green;
+  }
   </style>
 </head>
+
 <body>
   <h2><a href = "index.html" style="color:black;text-decoration:none">WEB</a></h2>
   <ol>
-    <li><a href = "1.html">HTML / 누룽지</a></li>
-    <li><a href = "2.html">CSS / 낑깡</a></li>
-    <li><a href = "3.html">JS / 찐빵</a></li>
+    <li><a href = "1.html" class="saw">HTML / 누룽지</a></li>
+    <li><a href = "2.html" class="active" id="dong">CSS / 낑깡</a></li>
+    <li><a href = "3.html" class="saw">JS / 찐빵</a></li>
   </ol>
   <p style = "margin-top:45px;"><strong>==========================================</strong></p>
   <h1>낑깡</h1>
@@ -69,13 +79,38 @@
       <br>- text-decoration : 텍스트의 밑줄
       <br>- font-size : 텍스트의 사이즈
       <br>- text-align : 텍스트의 정렬
+      <br>- border-width : 테두리의 두께
+      <br>- border-color : 테두리의 색
+      <br>- border-style : 테두리의 스타일
+      <br>- 위에 3가지 효과를 보면 border가 중복이 되는데 이것은 border: 10px solid red; 처럼 명시 가능
+      <br>- padding : 컨텐트와 테두리 사이의 간격
+      <br>- margin : 테두리와 테두리 사이의 간격
       <br>- 그 밖에 에디터의 자동완성, 검색으로 알아볼 것!
     </p>
 
     <p><strong>* 선택자</strong>
+      <br>- 태그에 대해서 같은 속성을 갖고 있다면 h1, a {...} 처럼 중복에 대해 대처 가능
       <br>- 링크에 대해서 현재 머물고 있는 링크와 방문했었던 링크를 색으로 비교하고자 한다.
       <br>- 기존에 속성의 style로 color를 주는 작업을 한다면 중복이라는 문제가 발생
       <br>- 따라서, class라는 속성을 이용해서 선택자들을 태그별로 나누는게 아니라 하나의 그룹으로 나눌 수 있게 되었음
+      <br>- class의 값으로 여러 클래스를 가질 수 있는데 띄어쓰기 하나로 구분을 하게 된다.
+      <br>- head태그에 class를 명시할 때에는 <strong>.classNM</strong> 형식으로 표시하고
+      <br>- 만약 여러 class에 속해있는 상황에서 head 태그에 명시되어있는 class 중 나중에 명시된것이 적용이 된다.
+      <br>- 하지만 class가 아닌 id선택자를 사용하게 되었을 때는 순서와 상관없이 id선택자가 적용이 된다.
+      <br>- id 선택자는 이 웹페이지에서 단, 하나만 나와야 한다.
+      <br>- 결론적으로는 우선순위는 id > class > tag (즉, 구체적인것이 우선순위가 더 높다!!)
+    </p>
+
+    <p><strong>* BOX 모델</strong>
+      <p><strong>* block level element</strong>
+        <br>- 컨텐트 영역이 화면을 가득 채움
+        <br>- display:inline 속성을 통해 inline으로도 가능
+      </p>
+
+      <p><strong>* inline element</strong>
+        <br>- 컨텐트 영역이 내용물에 맞추어 나타냄
+        <br>- display:block 속성을 통해 block으로도 가능
+      </p>
     </p>
 
 
