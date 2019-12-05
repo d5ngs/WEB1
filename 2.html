@@ -3,55 +3,38 @@
 <head>
   <title>WEB(css)_With_MY</title>
   <meta charset="utf-8">
-  <style>
-  a {
-    color: black;
-  }
-  h2 {
-    font-size: 50px;
-  }
-  h4 {
-    color: orange;
-  }
-  .saw {
-    color: gray;
-  }
-  .active {
-    color: red;
-  }
-  #dong {
-    color: green;
-  }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h2><a href = "index.html" style="color:black;text-decoration:none">WEB</a></h2>
-  <ol>
-    <li><a href = "1.html" class="saw">HTML / 누룽지</a></li>
-    <li><a href = "2.html" class="active" id="dong">CSS / 낑깡</a></li>
-    <li><a href = "3.html" class="saw">JS / 찐빵</a></li>
-  </ol>
-  <p style = "margin-top:45px;"><strong>==========================================</strong></p>
-  <h1>낑깡</h1>
-  <p style = "margin-top:45px;">민영이는 <b><font color="orange">낑깡</font></b>을 좋아한다.
-    <br>'<font color="orange">낑깡</font>'이 무엇인지 난 몰랐다면 민영이를 모르고 지냈을 수도?
-    <br>그나저나 <strong><u><font color="orange">낑깡</font></u></strong>을 요즘엔 안먹는것 같다.
-    <br>사줘야겠당..
-    <br>이 친구가 궁금하다면 <a href="https://www.instagram.com/ming0_/" target="_blank" title = "민영스타그램" style="color:blue">클릭해보시지.</a></p>
-    <img src="mini_orange.jpg" width="450">
+  <div id="grid">
+    <ol>
+      <li><a href = "1.html">HTML / 누룽지</a></li>
+      <li><a href = "2.html" id="dong">CSS / 낑깡</a></li>
+      <li><a href = "3.html">JS / 찐빵</a>
+    </ol>
+    <div id="article">
+      <h1>낑깡</h1>
+      <p style = "margin:10px;">민영이는 <b><strong class = "orange">낑깡</strong></b>을 좋아한다.
+        <br>'<strong class = "orange">낑깡</strong>'이 무엇인지 난 몰랐다면 민영이를 모르고 지냈을 수도?
+        <br>그나저나 <strong class = "orange">낑깡</strong>을 요즘엔 안먹는것 같다.
+        <br>사줘야겠당..
+        <br><img src="mini_orange.jpg" width="450">
+        <br>PS.이 친구가 궁금하다면 <a href="https://www.instagram.com/ming0_/" target="_blank" title = "민영스타그램" style="color:blue">클릭해보시지.</a>
+      </p>
 
-    <p style="margin-top:45px;">
-      <h3>아무말 대잔치</h3>
-      <br><h4>낑깡은 왜 껍질채로 먹나?</h4>
-      <br><h4>오렌지 밀감 낑깡은 한 가족인가?</h4>
-      <br><h4>민영이가 요즘 참 피곤해 보이는군</h4>
-      <br><h4>요즘 두통이 나는데 도통 이유를 모루겠군</h4>
-      <br><h4>껍질 다 까여진 밀감이 쌓여있다면 40개는 먹을 수 있을것 같애</h4>
+      <p style="margin-top:45px;">
+        <h3>아무말 대잔치</h3>
+        <br><strong class = "orange">낑깡</strong>은 왜 껍질채로 먹나?
+        <br>오렌지 밀감 <strong class = "orange">낑깡</strong>은 한 가족인가?
+        <br>민영이가 요즘 참 피곤해 보이는군
+        <br>요즘 두통이 나는데 도통 이유를 모루겠군
+        <br>껍질 다 까여진 밀감이 쌓여있다면 40개는 먹을 수 있을것 같애
+      </p>
+    </div>
+  </div>
 
-    </p>
-
-    <p style = "margin-top:45px;"><strong>==========================================</strong></p>
     <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Ok0bBJPtgJI" frameborder = "0" allowfullscreen></iframe></p>
 
     <p style = "margin-top:45px;"><strong>* font</strong>
@@ -99,6 +82,7 @@
       <br>- 하지만 class가 아닌 id선택자를 사용하게 되었을 때는 순서와 상관없이 id선택자가 적용이 된다.
       <br>- id 선택자는 이 웹페이지에서 단, 하나만 나와야 한다.
       <br>- 결론적으로는 우선순위는 id > class > tag (즉, 구체적인것이 우선순위가 더 높다!!)
+      <br>- 부모 자식의 관계를 선택자 선언에도 쓰일 수 있음 #grid ol {...} 처럼
     </p>
 
     <p><strong>* BOX 모델</strong>
@@ -111,6 +95,22 @@
         <br>- 컨텐트 영역이 내용물에 맞추어 나타냄
         <br>- display:block 속성을 통해 block으로도 가능
       </p>
+    </p>
+
+    <p><strong>* 반응형 디자인</strong>
+      <br>- 화면의 크기에 따라서 웹 페이지의 각 요소들이 반응해서 동작하게 된다.
+      <br>- @media(...)를 통해서 원하는대로 가능!
+    </p>
+
+    <p><strong>* Media Query</strong>
+      <br>- 화면의 특성에 따라서 어떠한 조건을 만족할 때만 CSS의 내용이 동작.
+    </p>
+
+    <p><strong>* CSS 코드의 재사용성</strong>
+      <br>- style 태그를 다른 html파일에도 적용할 수 있다.
+      <br>- 하지만 각각의 html파일에서 style 태그의 내용이 중복된다면 이거 또한 문제가 될 수 있다.
+      <br>- style태그의 내용을 style.css 라는 파일에 담아내고 각각의 html파일에서는 link 태그를 이용해 이 스타일을 다운받아 적용할 수 있음
+      <br>- 한번 페이지를 방문해서 style.css 파일을 다운받았다면 다음부터 방문할 때 cache에 저장된 style.css를 빠르고 불러와 읽어서 네트워크 트래픽문제도XXX
     </p>
 
 
