@@ -1,30 +1,148 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>WEB(js)_With_MY</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function BodySetBackgroundColor(color) {
+      document.querySelector('body').style.backgroundColor = color;
+    }
+
+    function BodySetColor(color) {
+      document.querySelector('body').style.color = color;
+    }
+
+    function LinksSetColor(color) {
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while (i < alist.length) {
+        alist[i].style.color = color;
+        i = i + 1;
+      }
+    }
+
+    function nightDayHandler(self) {
+      var target = document.querySelector('body');
+
+      if (self.value === 'day') {
+        self.value = 'night'
+        Body.SetBackgroundColor('black');
+        Body.SetColor('white');
+        Links.SetColor('powderblue');
+      } else {
+        self.value = 'day'
+        Body.SetBackgroundColor('white');
+        Body.SetColor('black');
+        Links.SetColor('blue');
+      }
+    }
+  </script>
 </head>
+
 <body>
-  <h2><a href = "index.html">WEB</a></h2>
-  <ol>
-    <li><a href = "1.html">HTML / 누룽지</a></li>
-    <li><a href = "2.html">CSS / 낑깡</a></li>
-    <li><a href = "3.html">JS / 찐빵</a></li>
-  </ol>
-  <p style = "margin-top:45px;"><strong>==========================================</strong></p>
-  <h1>찐빵</h1>
-  <p style = "margin-top:45px;">민영이는 <b>찐빵</b>을 좋아한다.
-    <br>확신한다. 그 이유는 참 웃기다.
-    <br><strong><u>'찐빵'</u></strong>을 꿈 속에서 그렇게 애타게 찾는 사람은..
-    <br>동영상으로 찍어 남겨놓을걸..
-    <br>이 친구가 궁금하다면 <a href="https://www.instagram.com/ming0_/" target="_blank" title = "민영스타그램">클릭해보시지.</a>
-  </p>
-  <img src="zzin.jpg" width="450">
-  <p style = "margin-top:45px;"><strong>==========================================</strong></p>
+  <h2><a href="index.html" style="text-decoration:none">WEB</a></h2>
+  <div id="grid">
+    <ol id="index">
+      <li><a href="1.html">HTML / 누룽지</a></li>
+      <li><a href="2.html">CSS / 낑깡</a></li>
+      <li><a href="3.html" id="dong">JS / 찐빵</a></li>
 
+      <input type="button" value="day" onclick="
+        nightDayHandler(this);
+        ">
+    </ol>
 
+    <div id="article">
+      <h1>찐빵</h1>
+      <p style="margin-top:10px;">민영이는 <b>찐빵</b>을 좋아한다.
+        <br>확신한다. 그 이유는 참 웃기다.
+        <br><strong>'찐빵'</strong>을 꿈 속에서 그렇게 애타게 찾는 사람은..
+        <br>동영상으로 찍어 남겨놓을걸..
+        <br>이 친구가 궁금하다면 <a href="https://www.instagram.com/ming0_/" target="_blank" title="민영스타그램">클릭해보시지.</a>
+      </p>
 
+      <img src="zzin.jpg" width="450">
 
+    </div>
+  </div>
+  <div id="text">
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/dPRtcRwKo-Y" frameborder="0" allowfullscreen></iframe></p>
 
-  </body>
-  </html>
+    <p><strong>* JS</strong>
+      <br>- 사용자와 상호작용을 하는 언어
+      <br>- HTML을 제어하는 언어
+      <br>- 웹페이지를 동적으로 만들어줌
+      <br>- HTML은 1+1을 그대로 '1+1'로 표시하지만 JS는 2로 표현함 즉, 유동적임
+      <br>-
+    </p>
+
+    <p><strong>* document</strong>
+      <br>- document.querySelector('abc') : 태그 이름이 abc인 태그를 선택
+      <br>- document.querySelector('#abc') : 태그 id가 abc인 태그를 선택
+      <br>- document.querySelector('#abc').value : 태그 id가 abc인 태그의 value값을 가져옴
+      <br>- .write : 화면에 표시
+      <br>- document.querySelectorAll('a') : 태그 이름이 a인 태그 모두 선택
+    </p>
+
+    <p><strong>* 이벤트</strong>
+      <br>- onclick : 클릭했을 때 "..."안의 JS코드를 실행
+      <br>- onchange : 변화가 있을 때 "..."안의 JS코드를 실행
+      <br>- onkeydown : 키가 눌러졌을 때 "..."안의 JS코드를 실행
+      <br>- onmouseover : 마우스를 범위 안에 올렸을 때 "..."안의 JS 코드를 실행
+      <br>- onmouseout : 마우스가 범위 밖에 나갔을 때 "..."안의 JS 코드를 실행
+      <br>- onload : 브라우저 로딩이 끝났을 때 "..."안의 JS 코드를 실행
+    </p>
+
+    <p><strong>* 명령어</strong>
+      <br>- 개발자모드에서 console창에서 JS 가능 (현재 웹페이지가 대상)
+      <br>- "", '' 모두 쓰임
+      <br>- 'abc'.length : 문자의 길이
+      <br>- 'abc'.toUpperCase() : 대문자로 변경
+      <br>- 'abc'.indexOf('a') : 문자 abc에서 a의 위치
+      <br>- 'abc'.trim() : 문자열의 공백 제거
+      <br>- "abc" + "de" : 문자열 합치기
+    </p>
+
+    <p><strong>* 데이터 타입</strong>
+      <br>- boolean
+      <br>- null
+      <br>- undefined
+      <br>- number
+      <br>- string
+      <br>- symbol
+    </p>
+
+    <p><strong>* 변수</strong>
+      <br>- var x=1; var y=1; 처럼 대입연산자를 이용해서 변수 넣을 수 있음
+    </p>
+
+    <p><strong>* 리팩토링</strong>
+      <br>- 코드를 좀 더 효율적으로 변경하여 유지보수를 용이하게 만듬
+      <br>- 자기 자신을 가리키는 코드는 this. 로 간단히 표현할 수 있음
+      <br>- 'var target = document.querySelector('body');'
+      <br>- alist[i] 처럼 배열로 선언 가능
+      <br>- alist[i].style.color = 'blue' 처럼 변경 가능
+    </p>
+
+    <p><strong>* 매개변수, 인자</strong>
+      <br>- function sum(a, b) {...} sum(2,3); 라고 있을때,
+      <br>- a,b는 매개변수(parameter) 2,3은 인자(argument)라고 한다.
+    </p>
+
+    <p><strong>* 객체</strong>
+      <br>- 배열 생성엔 [] 대괄호
+      <br>- 객체 생성엔 {} 중괄호
+      <br>-     var coworkers = {<br>
+                "programmer": "egoing",<br>
+                "designer": "leezche"
+          };
+      <br>- 이렇게 선언을 함
+      <br>- "data scientist" 라는 값을 넣고 싶지만 공백이 있어서 넣지 못할 때,
+      <br>- coworkers["data scientist"] = "taeho"; 이렇게 하면 가능
+    </p>
+  </div>
+</body>
+
+</html>

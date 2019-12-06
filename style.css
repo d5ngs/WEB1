@@ -5,7 +5,7 @@ img {
   margin-top:20px;
 }
 a:visited {
-  color: gray;
+  color: black;
   text-decoration: none;
 }
 a:link {
@@ -21,7 +21,7 @@ h1 {
 h2 {
   font-size: 50px;
   text-align: center;
-  border-bottom:1px solid gray;
+  border-bottom:1px solid black;
   margin: 0;
   padding: 20px;
 }
@@ -35,10 +35,10 @@ h4 {
   font-weight: bold;
   color: #B90C0C;
 }
-ol {
+#index {
   border-right:1px solid gray;
   font-size: 17px;
-  width:150px;
+  width:120px;
   margin: 0;
   padding: 20px;
   text-decoration: none;
@@ -53,6 +53,9 @@ ol {
 }
 #grid ol {
   padding-left: 33px;
+}
+#text {
+  margin-left:170px;
 }
 
 @media(max-width:700px){

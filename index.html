@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>WEB(index)_With_MY</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h2><a href = "index.html">WEB</a></h2>
-  <ol>
-    <li><a href = "1.html">HTML / 누룽지</a></li>
-    <li><a href = "2.html">CSS / 낑깡</a></li>
-    <li><a href = "3.html">JS / 찐빵</a></li>
+  <h2><a href = "index.html" style="color:black;text-decoration:none">WEB</a></h2>
+    <div id="grid">
+  <ol id="index">
+    <li><a href="1.html">HTML / 누룽지</a></li>
+    <li><a href="2.html">CSS / 낑깡</a></li>
+    <li><a href="3.html">JS / 찐빵</a></li>
   </ol>
-  <p style = "margin-top:45px;"><strong>==========================================</strong></p>
-  <p><h2>WEB과 민영이</h2></p>
-  <p><strong>==========================================</strong></p>
-  <p>* 인터넷이 동작하기에는 최소 2대의 컴퓨터가 있어야 한다.</p>
+      <div id="article">
+
+    <h1>WEB과 민영이</h1>
+  </div>
+</div>
+<div id="text">
+  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/tZooW6PritE" frameborder = "0" allowfullscreen></iframe></p>
+  <p style = "margin-top:45px;">* 인터넷이 동작하기에는 최소 2대의 컴퓨터가 있어야 한다.</p>
   <p>
-    <br>
-    <br><strong>Web Server</strong>가 설치된 컴퓨터에는
+    <br><strong>* Web Server</strong>가 설치된 컴퓨터에는
     <ol>
       <li>info.cern.ch라는 주소를 부여</li>
       <li>index.html이라는 파일을 지정</li>
@@ -26,8 +33,7 @@
     </ol>
   </p>
   <p>
-    <br>
-    <br><strong>Web Browser</strong>가 설치된 컴퓨터에는
+    <br><strong>* Web Browser</strong>가 설치된 컴퓨터에는
     <ol>
       <li>http://info.cern.ch/index.html 이라는 주소를 입력할 수 있음</li>
       <li>클라이언트 라고 할 수 있고, 서버에게 request함</li>
@@ -35,14 +41,12 @@
     </ol>
   </p>
   <p>
-    <br>
     <br>* 우리는 늘 웹브라우저와 익숙하게 지내고 있다.
     <br>* 이번에는 웹서버로 눈을 돌려보자. 익숙해지는 것이다.
     <br>* 본인의 PC에 <strong>웹서버 설치</strong> VS 웹서버를 제공해주는 <strong>웹호스팅</strong>
   </p>
   <p>
-    <br>
-    <br><strong>Web Hosting</strong>
+    <br><strong>* Web Hosting</strong>
     <ol>
       <li>git의 계정을 만들고 로그인</li>
       <li>Repository 생성(initialize this repository with a README도 생성)</li>
@@ -52,14 +56,14 @@
     </ol>
   </p>
   <p>
-    <br>
-    <br><strong>Web Server 설치</strong>
+    <br><strong>* Web Server 설치</strong>
     <ol>
       <li>아파치, 비트나미 설치</li>
       <li>비트나미 매니저를 이용해 웹서버를 키고 끌 수 있음</li>
       <li>http://localhost = http://localhost/index.html,http://127.0.0.1/index.html 'localhost'라는 도메인 이름은 '내 컴퓨터'라는 의미</li>
       <li>여기서 index.html은 htdocs 디렉토리내에 있음</li>
-      <li><strong>웹서버</strong>를 쓰는 <a href="http://127.0.0.1/index.html" target="_blank">http://127.0.0.1/index.html</a> VS <strong>웹서버를 안쓰는</strong><a href="file:///D:/job/web/index.html" target="_blank">file:///D:/job/web/index.html</a> 는 사용자 입장에서는 큰 차이가 없음</li>
+      <li><strong>웹서버</strong>를 쓰는 <a href="http://127.0.0.1/index.html" target="_blank">http://127.0.0.1/index.html</a> VS <strong>웹서버를 안쓰는</strong><a href="file:///D:/job/web/index.html" target="_blank">file:///D:/job/web/index.html</a> 는 사용자 입장에서는
+        큰 차이가 없음</li>
       <li>하지만 웹서버를 쓰는 <strong>http://</strong>는 HyperTextTransfer Protocol의 약자로
         <br> 웹페이지를 전송하기 위해서 만든 <strong>통신규약</strong>임
         <br> 사실 <strong>file://</strong>처럼 자신의 컴퓨터에 있는 파일을 웹서버를 통해서 가져오는 것은 실제로 의미가 없음
@@ -70,10 +74,9 @@
         <br> 후자의 IP주소를 다른 PC에서 접속한다면 접속이 될 것이다! (단, 같은 네트워크를 사용!)
       </li>
     </ol>
-
-
   </p>
-
+</div>
 
 </body>
+
 </html>
