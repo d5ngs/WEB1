@@ -5,40 +5,8 @@
   <title>WEB(js)_With_MY</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
-  <script>
-    function BodySetBackgroundColor(color) {
-      document.querySelector('body').style.backgroundColor = color;
-    }
-
-    function BodySetColor(color) {
-      document.querySelector('body').style.color = color;
-    }
-
-    function LinksSetColor(color) {
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while (i < alist.length) {
-        alist[i].style.color = color;
-        i = i + 1;
-      }
-    }
-
-    function nightDayHandler(self) {
-      var target = document.querySelector('body');
-
-      if (self.value === 'day') {
-        self.value = 'night'
-        Body.SetBackgroundColor('black');
-        Body.SetColor('white');
-        Links.SetColor('powderblue');
-      } else {
-        self.value = 'day'
-        Body.SetBackgroundColor('white');
-        Body.SetColor('black');
-        Links.SetColor('blue');
-      }
-    }
-  </script>
+  <script src="color.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -75,7 +43,8 @@
       <br>- HTML을 제어하는 언어
       <br>- 웹페이지를 동적으로 만들어줌
       <br>- HTML은 1+1을 그대로 '1+1'로 표시하지만 JS는 2로 표현함 즉, 유동적임
-      <br>-
+      <br>- color.js 처럼 코드화 시켜서 유지보수를 용이하게 가능
+      <br>- script src='color.js' 처럼 명시할 것.
     </p>
 
     <p><strong>* document</strong>
@@ -141,6 +110,33 @@
       <br>- 이렇게 선언을 함
       <br>- "data scientist" 라는 값을 넣고 싶지만 공백이 있어서 넣지 못할 때,
       <br>- coworkers["data scientist"] = "taeho"; 이렇게 하면 가능
+      <br>- 객체의 값을 순차적으로 가져올 때는 for(var key in cowrkers){...}를 씀
+      <br>- coworkers.showAll() 처럼 객체에 소속된 함수는 method
+      <br>- 객체 내의 programmer, designer 같은 것들은 Property라고 함
+    </p>
+
+    <p><strong>* 라이브러리, 프레임워크</strong>
+      <br>- 다른 사람과 협력하는 모델
+      <br>- 라이브러리 : 도서관의 뜻, 부품을 가져오는 느낌
+      <br>- 프레임워크 : 만들려는 것의 공통적인 것들이 있고, 달라지는 부분만 수정해서 만드는 반제품 늬앙스.
+      <br>- jQuery : JS에서 가장 유명, 생산성이 높아짐, CDN(Content Delivery Network)을 지원하기 때문에 script src에만 달아주면 서버비 없이 무료로 사용 가능 / JS의 생산성을 향상시켜주는 JS 라이브러리(자주 사용되는 로직들의 재활용, 유통 가능하도록 만든 로직들의 묶음)
+    </p>
+
+    <p><strong>* UI, API</strong>
+      <br>- UI(User Interface) : 사용자가 목적달성을 위해 마주하는 조작체계
+      <br>- API(Application Programming Interface) : alert 같이 프로그래머의 개발을 돕기위해 마련된 도구 및 환경
+    </p>
+
+    <p><strong>* TIP</strong>
+      <br>- document : 웹페이지에 있는 어떤 태그를 삭제하고 싶거나 어떤 태그에 자식 태그를 추가하고 싶 때 (찾을 수 없다면 DOM)
+      <br>- window : 웹브라우저 자체를 제어(현재 웹페이지의 주소, 새 창열기, 브라우저 크기 알기 등)
+      <br>- ajax :  웹페이지를 리로드하지 않고 변경하고 싶다면
+      <br>- cookie : 웹페이지가 리로드 되어도 현재 상태를 유지하고 싶을 때
+      <br>- offline web application : 인터넷에 끊겨도 동작하는 웹페이지 제작
+      <br>- webRTC : 화상 통신 웹 앱을 만들 때
+      <br>- speech API : 사용자의 음성을 인식하고 음성으로 정보를 전달
+      <br>- webGL : 3차원 그래픽으로 게임과 같은 것을 만들 때
+      <br>- webVR : 가상현실
     </p>
   </div>
 </body>

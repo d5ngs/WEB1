@@ -1,184 +1,191 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>WEB(html)_With_MY</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script src="color.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <h2><a href = "index.html" style="color:black;text-decoration:none">WEB</a></h2>
+  <h2><a href="index.html" style="color:black;text-decoration:none">WEB</a></h2>
   <div id="grid">
     <ol id="index">
-      <li><a href = "1.html" id="dong">HTML / 누룽지</a></li>
-      <li><a href = "2.html">CSS / 낑깡</a></li>
-      <li><a href = "3.html">JS / 찐빵</a></li>
+      <li><a href="1.html" id="dong">HTML / 누룽지</a></li>
+      <li><a href="2.html">CSS / 낑깡</a></li>
+      <li><a href="3.html">JS / 찐빵</a></li>
+      <input type="button" value="day" onclick="
+        nightDayHandler(this);
+        ">
     </ol>
     <div id="article">
       <h1>누룽지</h1>
-      <p style = "margin-top:10px;">민영이는 <b><strong class = "brown">누룽지</strong></b>를 좋아한다.
+      <p style="margin-top:10px;">민영이는 <b><strong class="brown">누룽지</strong></b>를 좋아한다.
         <br>'민영이는 할머니 입맛'이라는 말이 익숙해질 때,
-        <br><strong class = "brown">누룽지</strong>를 즐겨 먹는다는 말에
+        <br><strong class="brown">누룽지</strong>를 즐겨 먹는다는 말에
         <br>또 한 번 낯설게 느꼈던 적이 있다.
         <br><img src="rice.jpg" width="450">
-        <br>PS.이 친구가 궁금하다면 <a href="https://www.instagram.com/ming0_/" target="_blank" title = "민영스타그램">클릭해보시지.</a>
+        <br>PS.이 친구가 궁금하다면 <a href="https://www.instagram.com/ming0_/" target="_blank" title="민영스타그램">클릭해보시지.</a>
       </p>
     </div>
   </div>
-<div id='text'>
-  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/jSJM9iOiQ1g" frameborder = "0" allowfullscreen></iframe></p>
+  <div id='text'>
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/jSJM9iOiQ1g" frameborder="0" allowfullscreen></iframe></p>
 
 
-  <p style = "margin-top:45px;"><strong>*b</strong>
-    <br>- 굵게 강조
-    <br>- 그냥 시각적으로만 강조
-  </p>
+    <p style="margin-top:45px;"><strong>*b</strong>
+      <br>- 굵게 강조
+      <br>- 그냥 시각적으로만 강조
+    </p>
 
-  <p><strong>* strong</strong>
-    <br>- 굵게 강조
-    <br>- 웹접근성에 어필
-    <br>- 음성으로 읽을 때도 강조
-  </p>
+    <p><strong>* strong</strong>
+      <br>- 굵게 강조
+      <br>- 웹접근성에 어필
+      <br>- 음성으로 읽을 때도 강조
+    </p>
 
-  <p><strong>* u</strong>
-    <br>- 밑줄 강조
-  </p>
+    <p><strong>* u</strong>
+      <br>- 밑줄 강조
+    </p>
 
-  <p><strong>* h1 ~ h6</strong>
-    <br>- 글자의 크기
-  </p>
+    <p><strong>* h1 ~ h6</strong>
+      <br>- 글자의 크기
+    </p>
 
-  <p><strong>* 통계</strong>
-    <br>1. head
-    <br>2. body
-    <br>3. html
-    <br>4. title
-    <br>5. meta
-    <br>6. div
-    <br>7. a
-    <br>8. script
-    <br>9. link
-    <br>10. img
-    <br>11. p
-    <br>12. span
-    <br>13. li
-    <br>14. ui
-    <br>15. br
-    <br>16. style
-    <br>17. h1
-    <br>18. h2
-    <br>19. input
-    <br>20. form
-    <br>21. strong
-    <br>22. h3
-    <br>23. table
-    <br>24. tr
-    <br>25. td
-  </p>
+    <p><strong>* 통계</strong>
+      <br>1. head
+      <br>2. body
+      <br>3. html
+      <br>4. title
+      <br>5. meta
+      <br>6. div
+      <br>7. a
+      <br>8. script
+      <br>9. link
+      <br>10. img
+      <br>11. p
+      <br>12. span
+      <br>13. li
+      <br>14. ui
+      <br>15. br
+      <br>16. style
+      <br>17. h1
+      <br>18. h2
+      <br>19. input
+      <br>20. form
+      <br>21. strong
+      <br>22. h3
+      <br>23. table
+      <br>24. tr
+      <br>25. td
+    </p>
 
-  <p><strong>* 줄바꿈</strong>
-    <br>- br은 그냥 줄바꿈
-    <br>- p는 단락을 지정
-  </p>
+    <p><strong>* 줄바꿈</strong>
+      <br>- br은 그냥 줄바꿈
+      <br>- p는 단락을 지정
+    </p>
 
-  <p><strong>* HTML안에서 부등호 쓰기</strong>
-    <br>- < : &amplt;
-    <br>- > : &ampgt;
-    <br>- & : &ampamp;
-  </p>
+    <p><strong>* HTML안에서 부등호 쓰기</strong>
+      <br>- < : &amplt; <br>- > : &ampgt;
+        <br>- & : &ampamp;
+    </p>
 
-  <p><strong>* 부모, 자식 관계</strong>
-    <br>- 부모와 자식 태그 사이에는 정해진 관계가 아니다.
-    <br>- 즉 &lt;a&gt;태그 안에 &lt;b&gt;가 있을 수 있고 바뀔 수도 있다.
-    <br>- 하지만, 그 관계가 정해진 태그도 있다.
-    <br>- 그것은 바로 li태그는 ol과 ul의 자식관계로 구성
-  </p>
+    <p><strong>* 부모, 자식 관계</strong>
+      <br>- 부모와 자식 태그 사이에는 정해진 관계가 아니다.
+      <br>- 즉 &lt;a&gt;태그 안에 &lt;b&gt;가 있을 수 있고 바뀔 수도 있다.
+      <br>- 하지만, 그 관계가 정해진 태그도 있다.
+      <br>- 그것은 바로 li태그는 ol과 ul의 자식관계로 구성
+    </p>
 
-  <p><strong>* 목차</strong>
-    <br>- li로 목차 생성 가능
-    <li>S</li>
-    <li>D</li>
-
-    <br>- Unordered List
-    <br>- ul로는 목차간의 구분을 지어줌(줄도 바꿔 줌)
-    <br>- ul은 앞에 여백이 있음
-    <ul>
+    <p><strong>* 목차</strong>
+      <br>- li로 목차 생성 가능
       <li>S</li>
       <li>D</li>
-    </ul>
-    <ul>
-      <li>M</li>
-      <li>Y</li>
-    </ul>
-    <br>- Ordered List
-    <br>- ol은 순서를 매겨 줌(마찬가지로 줄 바꿔 줌)
-    <br>- ol은 앞에 여백 있음
-    <ol>
-      <li>S</li>
-      <li>D</li>
-      <li>♥</li>
-      <li>M</li>
-      <li>Y</li>
-    </ol>
-  </p>
 
-  <p><strong>* title</strong>
-    <br>- 탭의 이름을 설정
-    <br>- 한글 사용 시 이상한 문자로 나올 수 있음
-  </p>
+      <br>- Unordered List
+      <br>- ul로는 목차간의 구분을 지어줌(줄도 바꿔 줌)
+      <br>- ul은 앞에 여백이 있음
+      <ul>
+        <li>S</li>
+        <li>D</li>
+      </ul>
+      <ul>
+        <li>M</li>
+        <li>Y</li>
+      </ul>
+      <br>- Ordered List
+      <br>- ol은 순서를 매겨 줌(마찬가지로 줄 바꿔 줌)
+      <br>- ol은 앞에 여백 있음
+      <ol>
+        <li>S</li>
+        <li>D</li>
+        <li>♥</li>
+        <li>M</li>
+        <li>Y</li>
+      </ol>
+    </p>
 
-  <p><strong>* meta</strong>
-    <br>- &lt;meta charset="utf-8"&gt; = "웹페이지야 utf-8로 열어야 해~"
-  </p>
+    <p><strong>* title</strong>
+      <br>- 탭의 이름을 설정
+      <br>- 한글 사용 시 이상한 문자로 나올 수 있음
+    </p>
 
-  <p><strong>* head, body, html</strong>
-    <br>- 본문과 본문을 설명하는 정보를 각기 다른 태그로 분리해서 정돈!
-    <br>- head는 본문을 설명하는 태그
-    <br>- body는 본문 태그
-    <br>- 또, head와 body를 html 태그로 감싸기로 약속!
-    <br>- 추가로 이 웹페이지가 HTML로 만들어졌다는 것을 표현하기 위해서 &lt;doctype html&gt;를 먼저 기입!
-  </p>
+    <p><strong>* meta</strong>
+      <br>- &lt;meta charset="utf-8"&gt; = "웹페이지야 utf-8로 열어야 해~"
+    </p>
 
-  <p><strong>* a</strong>
-    <br>- HyperText로 태그의 제왕
-    <br>- anchor(닻)의 첫글자
-    <br>- &lt;a href="http://www...." target="..." title="..."&gt;쓰고싶은말&lt;/a&gt;
-    <br>- target에서 _blank를 했을 때는 링크 클릭했을 때 새창에서 페이지가 열리게 함
-    <br>- title은 링크에 커서를 얹을 때 나오는 문구
-    <br>- a:hover : 링크에 커서를 얹을 때
-    <br>- a:active : 마우스를 누르고 있는 동안의 상태
-    <br>- a:link : 클릭하지 않은 링크
-    <br>- a:visited : 한 번 클릭했던 링크
-  </p>
+    <p><strong>* head, body, html</strong>
+      <br>- 본문과 본문을 설명하는 정보를 각기 다른 태그로 분리해서 정돈!
+      <br>- head는 본문을 설명하는 태그
+      <br>- body는 본문 태그
+      <br>- 또, head와 body를 html 태그로 감싸기로 약속!
+      <br>- 추가로 이 웹페이지가 HTML로 만들어졌다는 것을 표현하기 위해서 &lt;doctype html&gt;를 먼저 기입!
+    </p>
 
-  <p> <strong>* iframe</strong>
-    <br>- 동영상을 삽입하는 태그
-    <br>- frameborder : 테두리 표시 유무
-    <br>- scrolling : 스크롤바 유무
-    <br>- allowfullscreen : 전체화면 기능 유무
-  </p>
+    <p><strong>* a</strong>
+      <br>- HyperText로 태그의 제왕
+      <br>- anchor(닻)의 첫글자
+      <br>- &lt;a href="http://www...." target="..." title="..."&gt;쓰고싶은말&lt;/a&gt;
+      <br>- target에서 _blank를 했을 때는 링크 클릭했을 때 새창에서 페이지가 열리게 함
+      <br>- title은 링크에 커서를 얹을 때 나오는 문구
+      <br>- a:hover : 링크에 커서를 얹을 때
+      <br>- a:active : 마우스를 누르고 있는 동안의 상태
+      <br>- a:link : 클릭하지 않은 링크
+      <br>- a:visited : 한 번 클릭했던 링크
+    </p>
 
-  <p> <strong>* iframe</strong>
-    <br>- 동영상을 삽입하는 태그
-    <br>- frameborder : 테두리 표시 유무
-    <br>- scrolling : 스크롤바 유무
-    <br>- allowfullscreen : 전체화면 기능 유무
-  </p>
+    <p> <strong>* iframe</strong>
+      <br>- 동영상을 삽입하는 태그
+      <br>- frameborder : 테두리 표시 유무
+      <br>- scrolling : 스크롤바 유무
+      <br>- allowfullscreen : 전체화면 기능 유무
+    </p>
 
-  <p>
-    <div id="disqus_thread"></div>
-    <script>
-      (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://web1-2.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-      })();
-    </script>
-    <noscript>
-      Please enable JavaScript to view the <a href ="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-    </noscript>
-  </p>
-</div>
+    <p> <strong>* iframe</strong>
+      <br>- 동영상을 삽입하는 태그
+      <br>- frameborder : 테두리 표시 유무
+      <br>- scrolling : 스크롤바 유무
+      <br>- allowfullscreen : 전체화면 기능 유무
+    </p>
+
+    <p>
+      <div id="disqus_thread"></div>
+      <script>
+        (function() {
+          var d = document,
+            s = d.createElement('script');
+          s.src = 'https://web1-2.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>
+        Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+      </noscript>
+    </p>
+  </div>
 </body>
+
 </html>
